@@ -13,3 +13,6 @@
 
 ### 效果
 主要看气质 
+<div align=center>
+<img src="https://github.com/707043502/red-black-tree-vis/blob/master/pic/rbt.png" width="150" height="200">
+</div>
