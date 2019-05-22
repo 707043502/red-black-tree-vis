@@ -48,6 +48,9 @@ class Node:
     def plot(self):
         self.create_location()
         self.node_plot()
+        frame = plt.gca()
+        frame.axes.get_yaxis().set_visible(False)
+        frame.axes.get_xaxis().set_visible(False)
         plt.pause(.1)
         plt.clf()
 
@@ -145,8 +148,9 @@ if __name__ == '__main__':
     rb_tree = LLRBT()
 
     data = list(range(pow(2, 6) - 1))
-    # random.shuffle(data)
+    random.shuffle(data)
     for i in data:
         rb_tree.put(i, 0)
         rb_tree.root.plot()
+
     plt.show()
